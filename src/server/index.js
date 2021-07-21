@@ -47,7 +47,9 @@ app.post('/nlp-api', async(req, res) => {
     try{
         const data = await response.json();
         console.log('Received_API_Request');
+        console.log(data.status);
         resultData = {
+            status: data.status,
             subjectivity: data.subjectivity,
             agreement: data.agreement,
             confidence: data.confidence,
