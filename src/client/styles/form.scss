@@ -10,3 +10,25 @@ input {
     line-height: 16px;
     margin: 10px 0;
 }
+
+main{
+    padding:20px;
+    section{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        strong{
+            font-weight: bold;
+            font-size: 20px;
+        }
+    }
+}
+
+#results{
+    padding: 15px;
+    div{
+        display: flex;
+        padding: 5px;
+        justify-content: space-between;
+    }
+}

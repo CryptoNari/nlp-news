@@ -2,9 +2,11 @@
 header {
     display: flex;
     justify-content: space-between;
-    padding: 10px 40px;
+    padding: 20px 40px;
+    background-color: cadetblue;
+    font-weight: bold;
 
     div {
-        font-size: 18px;
+        font-size: 25px;
     }
 }

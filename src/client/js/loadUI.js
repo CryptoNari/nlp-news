@@ -6,15 +6,15 @@ const uiUpdate = (appData={}) => {
         const ironyElement = document.getElementById('irony');
 
         if (appData.status.code === '0') { 
-                subjElement.innerHTML = `Subjectivity:      ${appData.subjectivity}`;
-                agreeElement.innerHTML = `Agreement:      ${appData.agreement}`;
-                confElement.innerHTML = `Confidence:      ${appData.confidence}`;
-                ironyElement.innerHTML = `Irony:      ${appData.irony}`;
+                subjElement.innerHTML = `<div>Subjectivity:</div><div>${appData.subjectivity}</div>`;
+                agreeElement.innerHTML = `<div>Agreement:</div><div>${appData.agreement}</div>`;
+                confElement.innerHTML = `<div>Confidence:</div><div>${appData.confidence}</div>`;
+                ironyElement.innerHTML = `<div>Irony:</div><div>${appData.irony}</div>`;
         } else {
-                subjElement.innerHTML = `Subjectivity:`;
-                agreeElement.innerHTML = `Agreement:`;
-                confElement.innerHTML = `Confidence:`;
-                ironyElement.innerHTML = `Irony:`;
+                subjElement.innerHTML = '';
+                agreeElement.innerHTML = '';
+                confElement.innerHTML = '';
+                ironyElement.innerHTML = '';
                 alert(`Was not able to get sentiment data. Error msg: "${appData.status.msg}"`);
         }
 }

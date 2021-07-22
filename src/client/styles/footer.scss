@@ -4,4 +4,9 @@ $primary-color: #333;
 footer {
     font: 100% $font-stack;
     color: $primary-color;
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    background-color: cadetblue;
+    font-size: 12px;
 }
